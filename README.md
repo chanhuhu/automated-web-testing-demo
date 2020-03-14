@@ -6,8 +6,6 @@ https://drive.google.com/drive/folders/1Fnz9Wt9pHRhrHqMERZYG9kv3MM2TZHZW?fbclid=
 
 # Development
 
-    clone repository ลงมา
-
 > 1 git clone
 
 > 2 cd folder
