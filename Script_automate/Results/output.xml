@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200208 16:28:53.719" generator="Robot 3.1.2 (Python 2.7.17 on win32)">
+<suite source="C:\Users\user\Desktop\automated\Script_automate\Login.robot" id="s1" name="Login">
+<test id="s1-t1" name="Did Login Page Load Componets Correctly?">
+<kw name="Open Login Page" library="LoginKeywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${urlLoginPage}</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20200208 16:28:53.922" level="INFO">Opening browser 'googlechrome' to base url 'https://fir-login-up.firebaseapp.com/'.</msg>
+<status status="PASS" endtime="20200208 16:29:00.274" starttime="20200208 16:28:53.921"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:00.275" starttime="20200208 16:28:53.921"></status>
+</kw>
+<kw name="Check Components In Login Page" library="LoginKeywords">
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:00.297" level="INFO">Current page contains text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:29:00.297" starttime="20200208 16:29:00.275"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:00.319" level="INFO">Current page contains text field '//input[@id='password']'.</msg>
+<status status="PASS" endtime="20200208 16:29:00.319" starttime="20200208 16:29:00.297"></status>
+</kw>
+<kw name="Page Should Contain Button" library="Selenium2Library">
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:00.334" level="INFO">Current page contains input '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:29:00.334" starttime="20200208 16:29:00.319"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:00.334" starttime="20200208 16:29:00.275"></status>
+</kw>
+<kw type="teardown" name="Close Web Browser" library="LoginKeywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200208 16:29:01.349" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200208 16:29:01.349" starttime="20200208 16:29:00.336"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>15s</arg>
+<arg>2s</arg>
+<arg>Capture Page Screenshot</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200208 16:29:01.630" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200208 16:29:01.631" starttime="20200208 16:29:01.349"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:01.631" starttime="20200208 16:29:01.349"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200208 16:29:03.877" starttime="20200208 16:29:01.631"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:03.877" starttime="20200208 16:29:00.335"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:03.878" critical="yes" starttime="20200208 16:28:53.921"></status>
+</test>
+<test id="s1-t2" name="Successfully Logged In">
+<kw name="Open Login Page" library="LoginKeywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${urlLoginPage}</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20200208 16:29:03.883" level="INFO">Opening browser 'googlechrome' to base url 'https://fir-login-up.firebaseapp.com/'.</msg>
+<status status="PASS" endtime="20200208 16:29:10.243" starttime="20200208 16:29:03.883"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:10.243" starttime="20200208 16:29:03.882"></status>
+</kw>
+<kw name="Check Components In Login Page" library="LoginKeywords">
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:10.267" level="INFO">Current page contains text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:29:10.267" starttime="20200208 16:29:10.244"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:10.287" level="INFO">Current page contains text field '//input[@id='password']'.</msg>
+<status status="PASS" endtime="20200208 16:29:10.287" starttime="20200208 16:29:10.267"></status>
+</kw>
+<kw name="Page Should Contain Button" library="Selenium2Library">
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:10.303" level="INFO">Current page contains input '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:29:10.303" starttime="20200208 16:29:10.287"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:10.303" starttime="20200208 16:29:10.244"></status>
+</kw>
+<kw name="Successfully Logged In" library="LoginKeywords">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:10.304" level="INFO">Typing text 'admin' into text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:29:10.372" starttime="20200208 16:29:10.304"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:10.372" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20200208 16:29:10.399" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200208 16:29:10.436" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" endtime="20200208 16:29:10.437" starttime="20200208 16:29:10.372"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:10.437" level="INFO">Clicking button '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:29:10.485" starttime="20200208 16:29:10.437"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:10.485" starttime="20200208 16:29:10.303"></status>
+</kw>
+<kw name="Check Components In Home Page" library="LoginKeywords">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${welcomeText}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200208 16:29:10.813" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200208 16:29:10.814" starttime="20200208 16:29:10.520"></status>
+</kw>
+<msg timestamp="20200208 16:29:10.815" level="FAIL">Page should have contained text '//div[@id='divTextDescWelcome']' but did not.</msg>
+<status status="FAIL" endtime="20200208 16:29:10.815" starttime="20200208 16:29:10.486"></status>
+</kw>
+<status status="FAIL" endtime="20200208 16:29:10.815" starttime="20200208 16:29:10.486"></status>
+</kw>
+<kw type="teardown" name="Close Web Browser" library="LoginKeywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200208 16:29:11.829" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200208 16:29:11.829" starttime="20200208 16:29:10.817"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>15s</arg>
+<arg>2s</arg>
+<arg>Capture Page Screenshot</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200208 16:29:12.085" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200208 16:29:12.085" starttime="20200208 16:29:11.829"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:12.085" starttime="20200208 16:29:11.829"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200208 16:29:14.317" starttime="20200208 16:29:12.085"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:14.317" starttime="20200208 16:29:10.816"></status>
+</kw>
+<status status="FAIL" endtime="20200208 16:29:14.318" critical="yes" starttime="20200208 16:29:03.881">Page should have contained text '//div[@id='divTextDescWelcome']' but did not.</status>
+</test>
+<test id="s1-t3" name="Login With Empty Data">
+<kw name="Open Login Page" library="LoginKeywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${urlLoginPage}</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20200208 16:29:14.323" level="INFO">Opening browser 'googlechrome' to base url 'https://fir-login-up.firebaseapp.com/'.</msg>
+<status status="PASS" endtime="20200208 16:29:20.485" starttime="20200208 16:29:14.323"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:20.485" starttime="20200208 16:29:14.322"></status>
+</kw>
+<kw name="Check Components In Login Page" library="LoginKeywords">
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:20.510" level="INFO">Current page contains text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:29:20.510" starttime="20200208 16:29:20.486"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:20.532" level="INFO">Current page contains text field '//input[@id='password']'.</msg>
+<status status="PASS" endtime="20200208 16:29:20.532" starttime="20200208 16:29:20.510"></status>
+</kw>
+<kw name="Page Should Contain Button" library="Selenium2Library">
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:20.549" level="INFO">Current page contains input '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:29:20.549" starttime="20200208 16:29:20.532"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:20.549" starttime="20200208 16:29:20.486"></status>
+</kw>
+<kw name="Login With Empty Data" library="LoginKeywords">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:20.550" level="INFO">Clicking button '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:29:20.599" starttime="20200208 16:29:20.550"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:20.599" starttime="20200208 16:29:20.550"></status>
+</kw>
+<kw type="teardown" name="Close Web Browser" library="LoginKeywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200208 16:29:21.613" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200208 16:29:21.613" starttime="20200208 16:29:20.600"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>15s</arg>
+<arg>2s</arg>
+<arg>Capture Page Screenshot</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200208 16:29:21.896" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200208 16:29:21.896" starttime="20200208 16:29:21.613"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:21.896" starttime="20200208 16:29:21.613"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200208 16:29:24.138" starttime="20200208 16:29:21.896"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:24.138" starttime="20200208 16:29:20.600"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:24.140" critical="yes" starttime="20200208 16:29:14.321"></status>
+</test>
+<test id="s1-t4" name="Login With Empty Username">
+<kw name="Open Login Page" library="LoginKeywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${urlLoginPage}</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20200208 16:29:24.145" level="INFO">Opening browser 'googlechrome' to base url 'https://fir-login-up.firebaseapp.com/'.</msg>
+<status status="PASS" endtime="20200208 16:29:30.297" starttime="20200208 16:29:24.144"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:30.297" starttime="20200208 16:29:24.144"></status>
+</kw>
+<kw name="Check Components In Login Page" library="LoginKeywords">
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:30.323" level="INFO">Current page contains text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:29:30.323" starttime="20200208 16:29:30.298"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:30.342" level="INFO">Current page contains text field '//input[@id='password']'.</msg>
+<status status="PASS" endtime="20200208 16:29:30.342" starttime="20200208 16:29:30.323"></status>
+</kw>
+<kw name="Page Should Contain Button" library="Selenium2Library">
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:30.363" level="INFO">Current page contains input '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:29:30.363" starttime="20200208 16:29:30.342"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:30.363" starttime="20200208 16:29:30.298"></status>
+</kw>
+<kw name="Login With Empty Username" library="LoginKeywords">
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:30.364" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20200208 16:29:30.395" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200208 16:29:30.435" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" endtime="20200208 16:29:30.436" starttime="20200208 16:29:30.364"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:30.436" level="INFO">Clicking button '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:29:30.484" starttime="20200208 16:29:30.436"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:30.484" starttime="20200208 16:29:30.364"></status>
+</kw>
+<kw type="teardown" name="Close Web Browser" library="LoginKeywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200208 16:29:31.500" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200208 16:29:31.500" starttime="20200208 16:29:30.486"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>15s</arg>
+<arg>2s</arg>
+<arg>Capture Page Screenshot</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200208 16:29:31.795" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200208 16:29:31.795" starttime="20200208 16:29:31.500"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:31.795" starttime="20200208 16:29:31.500"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200208 16:29:33.977" starttime="20200208 16:29:31.795"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:33.977" starttime="20200208 16:29:30.485"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:33.978" critical="yes" starttime="20200208 16:29:24.143"></status>
+</test>
+<test id="s1-t5" name="Login With Empty Password">
+<kw name="Open Login Page" library="LoginKeywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${urlLoginPage}</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20200208 16:29:33.982" level="INFO">Opening browser 'googlechrome' to base url 'https://fir-login-up.firebaseapp.com/'.</msg>
+<status status="PASS" endtime="20200208 16:29:40.170" starttime="20200208 16:29:33.982"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:40.170" starttime="20200208 16:29:33.981"></status>
+</kw>
+<kw name="Check Components In Login Page" library="LoginKeywords">
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:40.194" level="INFO">Current page contains text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:29:40.194" starttime="20200208 16:29:40.171"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:40.216" level="INFO">Current page contains text field '//input[@id='password']'.</msg>
+<status status="PASS" endtime="20200208 16:29:40.216" starttime="20200208 16:29:40.194"></status>
+</kw>
+<kw name="Page Should Contain Button" library="Selenium2Library">
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:40.230" level="INFO">Current page contains input '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:29:40.230" starttime="20200208 16:29:40.217"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:40.230" starttime="20200208 16:29:40.170"></status>
+</kw>
+<kw name="Login With Empty Password" library="LoginKeywords">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:40.232" level="INFO">Typing text 'admin' into text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:29:40.300" starttime="20200208 16:29:40.231"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:40.300" level="INFO">Clicking button '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:29:40.346" starttime="20200208 16:29:40.300"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:40.346" starttime="20200208 16:29:40.231"></status>
+</kw>
+<kw type="teardown" name="Close Web Browser" library="LoginKeywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200208 16:29:41.361" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200208 16:29:41.361" starttime="20200208 16:29:40.348"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>15s</arg>
+<arg>2s</arg>
+<arg>Capture Page Screenshot</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200208 16:29:41.626" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200208 16:29:41.627" starttime="20200208 16:29:41.361"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:41.627" starttime="20200208 16:29:41.361"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200208 16:29:43.768" starttime="20200208 16:29:41.627"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:43.768" starttime="20200208 16:29:40.348"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:43.768" critical="yes" starttime="20200208 16:29:33.980"></status>
+</test>
+<test id="s1-t6" name="Login With Wrong Password">
+<kw name="Open Login Page" library="LoginKeywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${urlLoginPage}</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20200208 16:29:43.775" level="INFO">Opening browser 'googlechrome' to base url 'https://fir-login-up.firebaseapp.com/'.</msg>
+<status status="PASS" endtime="20200208 16:29:50.020" starttime="20200208 16:29:43.774"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:50.020" starttime="20200208 16:29:43.774"></status>
+</kw>
+<kw name="Check Components In Login Page" library="LoginKeywords">
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:50.044" level="INFO">Current page contains text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:29:50.045" starttime="20200208 16:29:50.021"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:50.061" level="INFO">Current page contains text field '//input[@id='password']'.</msg>
+<status status="PASS" endtime="20200208 16:29:50.061" starttime="20200208 16:29:50.045"></status>
+</kw>
+<kw name="Page Should Contain Button" library="Selenium2Library">
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:50.082" level="INFO">Current page contains input '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:29:50.082" starttime="20200208 16:29:50.061"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:50.083" starttime="20200208 16:29:50.021"></status>
+</kw>
+<kw name="Login With Wrong Password" library="LoginKeywords">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:50.084" level="INFO">Typing text 'admin' into text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:29:50.154" starttime="20200208 16:29:50.083"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+<arg>${wrongPassword}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:50.154" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20200208 16:29:50.190" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200208 16:29:50.232" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" endtime="20200208 16:29:50.232" starttime="20200208 16:29:50.154"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:29:50.233" level="INFO">Clicking button '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:29:50.288" starttime="20200208 16:29:50.233"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:50.289" starttime="20200208 16:29:50.083"></status>
+</kw>
+<kw type="teardown" name="Close Web Browser" library="LoginKeywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200208 16:29:51.306" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200208 16:29:51.306" starttime="20200208 16:29:50.290"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>15s</arg>
+<arg>2s</arg>
+<arg>Capture Page Screenshot</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200208 16:29:51.587" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200208 16:29:51.587" starttime="20200208 16:29:51.306"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:51.587" starttime="20200208 16:29:51.306"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200208 16:29:53.913" starttime="20200208 16:29:51.587"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:53.913" starttime="20200208 16:29:50.289"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:29:53.915" critical="yes" starttime="20200208 16:29:43.773"></status>
+</test>
+<test id="s1-t7" name="Agree Get Wrong Username Or Password">
+<kw name="Open Login Page" library="LoginKeywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${urlLoginPage}</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20200208 16:29:53.919" level="INFO">Opening browser 'googlechrome' to base url 'https://fir-login-up.firebaseapp.com/'.</msg>
+<status status="PASS" endtime="20200208 16:30:00.140" starttime="20200208 16:29:53.919"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:00.140" starttime="20200208 16:29:53.918"></status>
+</kw>
+<kw name="Check Components In Login Page" library="LoginKeywords">
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:00.167" level="INFO">Current page contains text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:30:00.167" starttime="20200208 16:30:00.141"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:00.190" level="INFO">Current page contains text field '//input[@id='password']'.</msg>
+<status status="PASS" endtime="20200208 16:30:00.190" starttime="20200208 16:30:00.167"></status>
+</kw>
+<kw name="Page Should Contain Button" library="Selenium2Library">
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:00.214" level="INFO">Current page contains input '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:30:00.214" starttime="20200208 16:30:00.190"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:00.215" starttime="20200208 16:30:00.141"></status>
+</kw>
+<kw name="Login With Wrong Password" library="LoginKeywords">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:00.216" level="INFO">Typing text 'admin' into text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:30:00.288" starttime="20200208 16:30:00.216"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+<arg>${wrongPassword}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:00.288" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20200208 16:30:00.317" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200208 16:30:00.356" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" endtime="20200208 16:30:00.357" starttime="20200208 16:30:00.288"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:00.357" level="INFO">Clicking button '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:30:00.413" starttime="20200208 16:30:00.357"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:00.413" starttime="20200208 16:30:00.215"></status>
+</kw>
+<kw name="Agree I Am Get Wrong Username Or Password" library="LoginKeywords">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmWrongUsernameOrPasswordButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:00.414" level="INFO">Clicking button '//input[@id='ok']'.</msg>
+<status status="PASS" endtime="20200208 16:30:00.473" starttime="20200208 16:30:00.414"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:00.473" starttime="20200208 16:30:00.414"></status>
+</kw>
+<kw type="teardown" name="Close Web Browser" library="LoginKeywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200208 16:30:01.488" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200208 16:30:01.488" starttime="20200208 16:30:00.474"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>15s</arg>
+<arg>2s</arg>
+<arg>Capture Page Screenshot</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200208 16:30:01.766" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200208 16:30:01.766" starttime="20200208 16:30:01.488"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:01.766" starttime="20200208 16:30:01.488"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200208 16:30:04.004" starttime="20200208 16:30:01.766"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:04.004" starttime="20200208 16:30:00.474"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:04.005" critical="yes" starttime="20200208 16:29:53.918"></status>
+</test>
+<test id="s1-t8" name="Logout From Home Page to Login Page">
+<kw name="Open Login Page" library="LoginKeywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${urlLoginPage}</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20200208 16:30:04.010" level="INFO">Opening browser 'googlechrome' to base url 'https://fir-login-up.firebaseapp.com/'.</msg>
+<status status="PASS" endtime="20200208 16:30:10.230" starttime="20200208 16:30:04.009"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:10.230" starttime="20200208 16:30:04.009"></status>
+</kw>
+<kw name="Check Components In Login Page" library="LoginKeywords">
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:10.254" level="INFO">Current page contains text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:30:10.254" starttime="20200208 16:30:10.231"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:10.277" level="INFO">Current page contains text field '//input[@id='password']'.</msg>
+<status status="PASS" endtime="20200208 16:30:10.277" starttime="20200208 16:30:10.254"></status>
+</kw>
+<kw name="Page Should Contain Button" library="Selenium2Library">
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:10.294" level="INFO">Current page contains input '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:30:10.294" starttime="20200208 16:30:10.277"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:10.294" starttime="20200208 16:30:10.230"></status>
+</kw>
+<kw name="Successfully Logged In" library="LoginKeywords">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:10.295" level="INFO">Typing text 'admin' into text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:30:10.370" starttime="20200208 16:30:10.295"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:10.370" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20200208 16:30:10.401" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200208 16:30:10.437" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" endtime="20200208 16:30:10.437" starttime="20200208 16:30:10.370"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:10.440" level="INFO">Clicking button '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:30:10.497" starttime="20200208 16:30:10.437"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:10.497" starttime="20200208 16:30:10.295"></status>
+</kw>
+<kw name="Check Components In Home Page" library="LoginKeywords">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${welcomeText}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200208 16:30:10.801" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200208 16:30:10.801" starttime="20200208 16:30:10.532"></status>
+</kw>
+<msg timestamp="20200208 16:30:10.802" level="FAIL">Page should have contained text '//div[@id='divTextDescWelcome']' but did not.</msg>
+<status status="FAIL" endtime="20200208 16:30:10.802" starttime="20200208 16:30:10.498"></status>
+</kw>
+<status status="FAIL" endtime="20200208 16:30:10.802" starttime="20200208 16:30:10.498"></status>
+</kw>
+<kw type="teardown" name="Close Web Browser" library="LoginKeywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200208 16:30:11.817" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200208 16:30:11.817" starttime="20200208 16:30:10.803"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>15s</arg>
+<arg>2s</arg>
+<arg>Capture Page Screenshot</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200208 16:30:12.085" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200208 16:30:12.085" starttime="20200208 16:30:11.817"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:12.085" starttime="20200208 16:30:11.817"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200208 16:30:14.334" starttime="20200208 16:30:12.085"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:14.334" starttime="20200208 16:30:10.803"></status>
+</kw>
+<status status="FAIL" endtime="20200208 16:30:14.335" critical="yes" starttime="20200208 16:30:04.008">Page should have contained text '//div[@id='divTextDescWelcome']' but did not.</status>
+</test>
+<test id="s1-t9" name="Confirm Logged Out">
+<kw name="Open Login Page" library="LoginKeywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${urlLoginPage}</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20200208 16:30:14.340" level="INFO">Opening browser 'googlechrome' to base url 'https://fir-login-up.firebaseapp.com/'.</msg>
+<status status="PASS" endtime="20200208 16:30:20.577" starttime="20200208 16:30:14.339"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:20.577" starttime="20200208 16:30:14.339"></status>
+</kw>
+<kw name="Check Components In Login Page" library="LoginKeywords">
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:20.607" level="INFO">Current page contains text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:30:20.607" starttime="20200208 16:30:20.578"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:20.629" level="INFO">Current page contains text field '//input[@id='password']'.</msg>
+<status status="PASS" endtime="20200208 16:30:20.629" starttime="20200208 16:30:20.607"></status>
+</kw>
+<kw name="Page Should Contain Button" library="Selenium2Library">
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:20.637" level="INFO">Current page contains input '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:30:20.637" starttime="20200208 16:30:20.629"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:20.637" starttime="20200208 16:30:20.577"></status>
+</kw>
+<kw name="Successfully Logged In" library="LoginKeywords">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${usernameTextField}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:20.644" level="INFO">Typing text 'admin' into text field '//input[@id='username']'.</msg>
+<status status="PASS" endtime="20200208 16:30:20.710" starttime="20200208 16:30:20.644"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordTextField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:20.713" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20200208 16:30:20.741" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200208 16:30:20.781" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" endtime="20200208 16:30:20.781" starttime="20200208 16:30:20.713"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20200208 16:30:20.782" level="INFO">Clicking button '//input[@id='submit']'.</msg>
+<status status="PASS" endtime="20200208 16:30:20.837" starttime="20200208 16:30:20.781"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:20.837" starttime="20200208 16:30:20.644"></status>
+</kw>
+<kw name="Check Components In Home Page" library="LoginKeywords">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${welcomeText}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200208 16:30:21.165" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200208 16:30:21.165" starttime="20200208 16:30:20.871"></status>
+</kw>
+<msg timestamp="20200208 16:30:21.166" level="FAIL">Page should have contained text '//div[@id='divTextDescWelcome']' but did not.</msg>
+<status status="FAIL" endtime="20200208 16:30:21.166" starttime="20200208 16:30:20.839"></status>
+</kw>
+<status status="FAIL" endtime="20200208 16:30:21.166" starttime="20200208 16:30:20.838"></status>
+</kw>
+<kw type="teardown" name="Close Web Browser" library="LoginKeywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200208 16:30:22.175" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20200208 16:30:22.175" starttime="20200208 16:30:21.167"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>15s</arg>
+<arg>2s</arg>
+<arg>Capture Page Screenshot</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200208 16:30:22.434" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200208 16:30:22.435" starttime="20200208 16:30:22.175"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:22.435" starttime="20200208 16:30:22.175"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200208 16:30:24.666" starttime="20200208 16:30:22.435"></status>
+</kw>
+<status status="PASS" endtime="20200208 16:30:24.666" starttime="20200208 16:30:21.167"></status>
+</kw>
+<status status="FAIL" endtime="20200208 16:30:24.667" critical="yes" starttime="20200208 16:30:14.338">Page should have contained text '//div[@id='divTextDescWelcome']' but did not.</status>
+</test>
+<status status="FAIL" endtime="20200208 16:30:24.671" starttime="20200208 16:28:53.721"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="6">Critical Tests</stat>
+<stat fail="3" pass="6">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="3" id="s1" name="Login" pass="6">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
