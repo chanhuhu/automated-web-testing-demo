@@ -6,7 +6,7 @@ numpy==1.16.6
 Pillow==6.2.2
 Pygments==2.5.2
 PyPubSub==3.3.0
-pywin32==227
+pywin32==301
 robotframework==3.1.2
 robotframework-appiumlibrary==1.5.0.4
 robotframework-ride==1.7.4.1
